@@ -1,6 +1,7 @@
 package routes
 
 import (
+	"github.com/garvit4540/golang-jwt-project/controllers"
 	"github.com/gin-gonic/gin"
 )
 
