@@ -19,7 +19,7 @@ func HashPassword(password string) string {
 }
 
 func VerifyPassword(password1 string, password2 string) (bool, string) {
-	err := bcrypt.CompareHashAndPassword([]byte(password1), []byte(password2))
+	err := bcrypt.CompareHashAndPassword([]byte(password2), []byte(password1))
 	if err != nil {
 		return false, "Password does not match"
 	}
